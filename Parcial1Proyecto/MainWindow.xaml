@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label Content="ProductoId" HorizontalAlignment="Left" Height="33" Margin="118,65,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label Content="Descripcion" HorizontalAlignment="Left" Height="33" Margin="118,103,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label Content="Existencia" HorizontalAlignment="Left" Height="33" Margin="118,141,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label Content="Costo" HorizontalAlignment="Left" Height="33" Margin="118,179,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label Content="ValorInventario" HorizontalAlignment="Left" Height="33" Margin="118,217,0,0" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="Id_Text" HorizontalAlignment="Left" Margin="234,65,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="33"/>
+        <TextBox x:Name="Descripcion_Text" HorizontalAlignment="Left" Margin="234,103,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="33"/>
+        <TextBox x:Name="Existencia_Text" HorizontalAlignment="Left" Margin="234,141,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="33" TextChanged="Existencia_Text_TextChanged"/>
+        <TextBox x:Name="Costo_Text" HorizontalAlignment="Left" Margin="234,179,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="33" TextChanged="Costo_Text_TextChanged"/>
+        <TextBox x:Name="ValorInventario_Text" HorizontalAlignment="Left" Margin="234,217,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="33"/>
+        <Button x:Name="BuscarButton" Content="Buscar" HorizontalAlignment="Left" Margin="350,65,0,0" VerticalAlignment="Top" Height="33" Width="111" Click="BuscarButton_Click"/>
+        <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="118,285,0,0" VerticalAlignment="Top" Height="33" Width="111" Click="NuevoButton_Click"/>
+        <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="234,285,0,0" VerticalAlignment="Top" Height="33" Width="111" Click="GuardarButton_Click"/>
+        <Button x:Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="350,285,0,0" VerticalAlignment="Top" Height="33" Width="111" Click="EliminarButton_Click"/>
+        <Button x:Name="Consultar" Content="Consultar" HorizontalAlignment="Left" Margin="466,285,0,0" VerticalAlignment="Top" Height="33" Width="111" Click="Consultar_Click"/>
 
     </Grid>
 </Window>
