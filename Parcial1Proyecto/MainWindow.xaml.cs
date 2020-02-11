@@ -211,12 +211,24 @@ namespace Parcial1Proyecto
 
         private void Existencia_Text_TextChanged(object sender, TextChangedEventArgs e)
         {
-            ValorInventario_Text.Text = "50";
+            Calcular();
+        }
+
+        private void Calcular()
+        {
+            int Id;
+            int.TryParse(Existencia_Text.Text, out Id);
+            int Id2;
+            int.TryParse(Costo_Text.Text, out Id2);
+
+            int resultado = Id * Id2;
+
+            ValorInventario_Text.Text = Convert.ToString(resultado);
         }
 
         private void Costo_Text_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            Calcular();
         }
     }
 }
